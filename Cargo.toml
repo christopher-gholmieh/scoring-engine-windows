@@ -1,0 +1,35 @@
+# Written by: Christopher Gholmieh
+# Package:
+[package]
+name = "scoring-engine-windows"
+
+# Version:
+version = "0.1.0"
+
+# Edition:
+edition = "2024"
+
+
+# Dependencies:
+[dependencies]
+notify-rust = "4.11.7"
+
+# Serialization:
+serde = { version = "1.0.221", features = ["derive"] }
+serde_json = "1.0.144"
+serde_yaml = "0.9.34"
+
+# Asynchronous:
+tokio = { version = "1.47.1", features = ["full"] }
+
+# Encryption:
+aes-gcm = "0.10.3"
+
+# Audio:
+rodio = "0.21.1"
+
+
+# Binary:
+[[bin]]
+name = "scoring-engine-windows"
+path = "source/main.rs"

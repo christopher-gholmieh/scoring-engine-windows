@@ -1,0 +1,152 @@
+/* Written by: Christopher Gholmieh */
+/* Body: */
+body {
+    /* Font: */
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 14px;
+
+    /* Background: */
+    background: url("./assets/background.png");
+
+    background-attachment: fixed;
+    background-position: top center;
+    background-color: #336699;
+    background-size: cover;
+
+    /* Width: */
+    width: 100%;
+
+    /* Height: */
+    height: 100%;
+
+    /* Margin: */
+    margin: 0;
+
+    /* Padding: */
+    padding: 0;
+}
+
+/* Headers: */
+h1, h2, .center {
+    /* Align: */
+    text-align: center;
+}
+
+/* Footer: */
+footer {
+    /* Margin: */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Main: */
+.main {
+    /* Background: */
+    background-color: white;
+
+    /* Margin: */
+    margin: 20px auto;
+
+    /* Padding: */
+    padding: 12px;
+
+    /* Width: */
+    max-width: 900px;
+    min-width: 600px;
+
+    /* Border: */
+    border-radius: 12px;
+
+    /* Shadow: */
+    box-shadow: 0px 0px 12px #003366;
+}
+
+/* Remediation: */
+.remediation {
+    /* Color: */
+    color: black;
+}
+
+/* Penalty: */
+.penalty {
+    /* Color: */
+    color: red;
+}
+
+/* Green: */
+.green {
+    /* Color: */
+    color: green;
+}
+
+/* Binary: */
+.binary {
+    /* Position: */
+    position: relative;
+
+    /* Overflow: */
+    overflow: hidden;
+}
+
+.binary::before {
+    /* Content: */
+    content: attr(data-binary);
+
+    /* Position: */
+    position: absolute;
+
+    /* Left: */
+    left: -1000px;
+
+    /* Top: */
+    top: -1000px;
+
+    /* Display: */
+    display: block;
+
+    /* Width: */
+    width: 500%;
+
+    /* Height: */
+    height: 300%;
+
+    /* Transform: */
+    transform: rotate(-45deg);
+
+    /* Opacity: */
+    opacity: 0.15;
+
+    /* Color: */
+    color: #369;
+
+    /* Line: */
+    line-height: 2em;
+
+    /* Font: */
+    font-size: 10px;
+
+    /* Letter: */
+    letter-spacing: 2px;
+
+    /* Pointer: */
+    pointer-events: none;
+}
+
+#remediations {
+    /* Display: */
+    display: flex;
+
+    /* Direction: */
+    flex-direction: column;
+
+    /* Gap: */
+    gap: 1px;
+}
+
+#remediations > p {
+    /* Font: */
+    font-size: 14px;
+
+    /* Margin: */
+    margin: 0 0;
+}

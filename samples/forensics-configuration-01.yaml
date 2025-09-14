@@ -1,0 +1,35 @@
+# Written by: Christopher Gholmieh
+# Image:
+image:
+    # Title: 
+    title: "Sample Configuration #01"
+
+    # User:
+    user: "user"
+
+# Checks:
+checks:
+  # Forensics:
+  - check:
+      # Description:
+      description: "Forensics #1 answered correctly."
+
+      # Points:
+      points: 5
+
+      # Pass:
+      pass:
+        - |
+          Select-String -Path "<path>" -Pattern "ANSWER: <answer>"
+
+  - check:
+      # Description:
+      description: "Forensics #2 answered correctly."
+
+      # Points:
+      points: 5
+
+      # Pass:
+      pass:
+        - |
+          Select-String -Path "<path>" -Pattern "ANSWER: <answer>"
