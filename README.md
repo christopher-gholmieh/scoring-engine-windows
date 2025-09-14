@@ -18,3 +18,6 @@ cargo build --release
 ```
 
 Lastly, execute the binary upon startup with the website folder and assets folder in the same directory.
+
+## Purpose
+This scoring engine was heavily inspired by aeacus's paradigm, and can be used to make Windows practice images for [WHS CyberPatriots](https://www.whscyberpatriots.com)!
